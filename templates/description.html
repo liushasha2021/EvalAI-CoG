@@ -4,9 +4,9 @@
 <p>
   The goal of the competition is to find good sim2real methods. In the competition task, the robot needs to find 5 targets whose positions are randomly generated in the maze, and complete the activation in a specified order. In 3 minutes, the agent which finds 5 targets and activates them at the fastest and safe speed wins. The competition will be divided into two stages: in the first stage, the agent only needs to complete the above tasks in the simulation environment. We will select the agents with higher scores to participate in the second stage. In the second stage, we deploy the participating agents to the physical robot and test them in a real environment. At this stage, the agent needs to deal with the difference between the simulated robot actuator and the physical actuator, and the state difference caused by a different environment. The agent can adjust the model according to the feedback data and results.  
 </p>
-<h3>Track</h3>
-<h4>Track 1: complete information-based track.</h4>
+<h5>Track</h5>
+<h6>Track 1: complete information-based track.</h6>
 <p>The state of the robot includes its position in the map, speed, image at the current time, and the target position (but it does not know the corresponding order, which can be determined only after detecting the visual label). The algorithm is required to output the speed command to control the robot.</p>
 
-<h4>Track 2: image-based track</h4>
+<h6>Track 2: image-based track</h6>
 <p>The robot can obtain only the image and speed of the current time. The algorithm is required to output the speed command to control the robot.</p>
