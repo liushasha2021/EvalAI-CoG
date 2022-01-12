@@ -1,7 +1,7 @@
 # If you are not sure what all these fields mean, please refer our documentation here:
 # https://evalai.readthedocs.io/en/latest/configuration.html
 title: 2022 CoG Robomaster Sim2Real Challenge
-short_description: Random number generation challenge for each submission
+short_description: This competition is themed around EP robots, and we will provide simulation environments and real life scenarios. Robots need to continuously search for sequential QR codes in a specified map, while avoiding collisions with static obstacles and other moving robots in the environment. The robot that completes the search for the QR code in the fastest and safest way will win the competition. There are two tracks, the first one is simpler, which is investigates the basic algorithm, the second one is more difficult, which is investigates some reinforcement learning algorithms. We will provide a simulation environment which can be used by reinforcement learning algorithms and other learning algorithms. We will provide motion planning、localization、shutting、rule decision and reinforcement learning baseline algorithms. The competition will be divided into three stages. In the first stage, the competition will be carried out in the simulation environment, in the second stage, the competition will be carried out in the actual robot field, and in the third stage, the scheme defense will be carried out.
 description: templates/description.html
 evaluation_details: templates/evaluation_details.html
 terms_and_conditions: templates/terms_and_conditions.html
