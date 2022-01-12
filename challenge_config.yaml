@@ -64,22 +64,7 @@ challenge_phases:
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".zip"
     
-  - id: 3
-    name: Online Technical Defense Phase
-    description: templates/challenge_phase_3_description.html
-    leaderboard_public: True
-    is_public: True
-    is_submission_public: True
-    start_date: 2022-08-10 14:00:00
-    end_date: 2022-08-10 18:00:00
-    test_annotation_file: annotations/test_annotations_testsplit.json
-    codename: Online
-    max_submissions_per_day: 1
-    max_submissions_per_month: 1
-    max_submissions: 1
-    is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: False
-    allowed_submission_file_types: ".zip"
+
 
 dataset_splits:
   - id: 1
