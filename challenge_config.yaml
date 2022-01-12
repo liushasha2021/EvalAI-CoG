@@ -9,26 +9,22 @@ image: logo.jpg
 submission_guidelines: templates/submission_guidelines.html
 leaderboard_description: Now, wo only use score which can be calculated by the way mationed in the Evaluation to judge which team is better.
 evaluation_script: evaluation_script.zip
-remote_evaluation: False
+remote_evaluation: True
 is_docker_based: False
-start_date: 2019-01-01 00:00:00
-end_date: 2099-05-31 23:59:59
+start_date: 2022-03-15 00:00:00
+end_date: 2099-08-15 23:59:59
 published: True
 
 leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
-        "default_order_by": "Total",
+        "labels": ["Score"],
+        "default_order_by": "Score",
         "metadata": {
-          "Metric1": {
+          "Score": {
             "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          "Metric2": {
-            "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description": "The only metric to meature the algorithm's level.",
           }
         }
       }
