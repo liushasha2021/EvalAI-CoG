@@ -43,32 +43,6 @@ challenge_phases:
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
-    default_submission_meta_attributes:
-      - name: method_name
-        is_visible: True
-      - name: method_description
-        is_visible: True
-      - name: project_url
-        is_visible: True
-      - name: publication_url
-        is_visible: True
-    submission_meta_attributes:
-      - name: TextAttribute
-        description: Sample
-        type: text
-        required: False
-      - name: SingleOptionAttribute
-        description: Sample
-        type: radio
-        options: ["A", "B", "C"]
-      - name: MultipleChoiceAttribute
-        description: Sample
-        type: checkbox
-        options: ["alpha", "beta", "gamma"]
-      - name: TrueFalseField
-        description: Sample
-        type: boolean
-        required: True
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".zip"
@@ -113,6 +87,17 @@ challenge_phases:
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".zip"
+   
+ - id: 3
+    name: Online Technical Defense Phase
+    description: templates/challenge_phase_3_description.html
+    leaderboard_public: True
+    is_public: True
+    is_submission_public: True
+    start_date: 2022-08-10 14:00:00
+    end_date: 2022-08-10 18:00:00
+    test_annotation_file: annotations/test_annotations_testsplit.json
+    codename: Online
 
 dataset_splits:
   - id: 1
