@@ -54,7 +54,7 @@ challenge_phases:
         is_visible: False
     submission_meta_attributes:
       - name: TextAttribute
-        description: Sample
+        description: Notes on running code
         type: text
         required: False
 #       - name: SingleOptionAttribute
