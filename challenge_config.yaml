@@ -57,11 +57,11 @@ challenge_phases:
         description: Notes on running code
         type: text
         required: False
-#       - name: SingleOptionAttribute
-#         description: Sample
-#         type: radio
-#          required: False
-#         options: ["A", "B", "C"]
+      - name: Track_Choose
+        description: which track do you prefer?
+        type: radio
+         required: True
+        options: ["Track 1", "Track 2"]
 #       - name: MultipleChoiceAttribute
 #         description: Sample
 #         type: checkbox
