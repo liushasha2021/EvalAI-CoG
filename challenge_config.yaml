@@ -49,23 +49,14 @@ challenge_phases:
       - name: method_description
         is_visible: True
       - name: project_url
-        is_visible: True
+        is_visible: False
       - name: publication_url
         is_visible: False
-#     default_submission_meta_attributes:
-#       - name: method_name
-#         is_visible: True
-#       - name: method_description
-#         is_visible: True
-#       - name: project_url
-#         is_visible: False
-#       - name: publication_url
-#         is_visible: False
-#     submission_meta_attributes:
-#       - name: TextAttribute
-#         description: Sample
-#         type: text
-#         required: False
+    submission_meta_attributes:
+      - name: TextAttribute
+        description: Sample
+        type: text
+        required: False
 #       - name: SingleOptionAttribute
 #         description: Sample
 #         type: radio
@@ -80,6 +71,7 @@ challenge_phases:
 #         description: Sample
 #         type: boolean
 #         required: True
+
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".zip"
