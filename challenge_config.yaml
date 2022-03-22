@@ -60,7 +60,7 @@ challenge_phases:
       - name: Track_Choose
         description: which track do you prefer?
         type: radio
-         required: True
+        required: True
         options: ["Track 1", "Track 2"]
 #       - name: MultipleChoiceAttribute
 #         description: Sample
