@@ -43,34 +43,34 @@ challenge_phases:
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
-    default_submission_meta_attributes:
-      - name: method_name
-        is_visible: True
-      - name: method_description
-        is_visible: True
-      - name: project_url
-        is_visible: False
-      - name: publication_url
-        is_visible: False
-    submission_meta_attributes:
-      - name: TextAttribute
-        description: Sample
-        type: text
-        required: False
-      - name: SingleOptionAttribute
-        description: Sample
-        type: radio
-         required: False
-        options: ["A", "B", "C"]
-      - name: MultipleChoiceAttribute
-        description: Sample
-        type: checkbox
-         required: False
-        options: ["alpha", "beta", "gamma"]
-      - name: TrueFalseField
-        description: Sample
-        type: boolean
-        required: True
+#     default_submission_meta_attributes:
+#       - name: method_name
+#         is_visible: True
+#       - name: method_description
+#         is_visible: True
+#       - name: project_url
+#         is_visible: False
+#       - name: publication_url
+#         is_visible: False
+#     submission_meta_attributes:
+#       - name: TextAttribute
+#         description: Sample
+#         type: text
+#         required: False
+#       - name: SingleOptionAttribute
+#         description: Sample
+#         type: radio
+#          required: False
+#         options: ["A", "B", "C"]
+#       - name: MultipleChoiceAttribute
+#         description: Sample
+#         type: checkbox
+#          required: False
+#         options: ["alpha", "beta", "gamma"]
+#       - name: TrueFalseField
+#         description: Sample
+#         type: boolean
+#         required: True
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".zip"
@@ -95,34 +95,34 @@ challenge_phases:
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
-    default_submission_meta_attributes:
-      - name: method_name
-        is_visible: True
-      - name: method_description
-        is_visible: True
-      - name: project_url
-        is_visible: False
-      - name: publication_url
-        is_visible: False
-    submission_meta_attributes:
-      - name: TextAttribute
-        description: Sample
-        type: text
-        required: False
-      - name: SingleOptionAttribute
-        description: Sample
-        type: radio
-         required: False
-        options: ["A", "B", "C"]
-      - name: MultipleChoiceAttribute
-        description: Sample
-        type: checkbox
-         required: False
-        options: ["alpha", "beta", "gamma"]
-      - name: TrueFalseField
-        description: Sample
-        type: boolean
-        required: True
+#     default_submission_meta_attributes:
+#       - name: method_name
+#         is_visible: True
+#       - name: method_description
+#         is_visible: True
+#       - name: project_url
+#         is_visible: False
+#       - name: publication_url
+#         is_visible: False
+#     submission_meta_attributes:
+#       - name: TextAttribute
+#         description: Sample
+#         type: text
+#         required: False
+#       - name: SingleOptionAttribute
+#         description: Sample
+#         type: radio
+#          required: False
+#         options: ["A", "B", "C"]
+#       - name: MultipleChoiceAttribute
+#         description: Sample
+#         type: checkbox
+#          required: False
+#         options: ["alpha", "beta", "gamma"]
+#       - name: TrueFalseField
+#         description: Sample
+#         type: boolean
+#         required: True
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".zip"
