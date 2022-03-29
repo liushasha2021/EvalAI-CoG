@@ -11,7 +11,7 @@ leaderboard_description: Now, wo only use score which can be calculated by the w
 evaluation_script: evaluation_script.zip
 remote_evaluation: True
 is_docker_based: False
-start_date: 2022-03-15 00:00:00
+start_date: 2022-04-01 00:00:00
 end_date: 2022-08-15 23:59:59
 published: True
 
@@ -36,8 +36,8 @@ challenge_phases:
     leaderboard_public: True
     is_public: True
     is_submission_public: True
-    start_date: 2022-03-15 00:00:00
-    end_date: 2022-05-31 23:59:59
+    start_date: 2022-05-11 00:00:00
+    end_date: 2022-06-10 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
     codename: Simulation
     max_submissions_per_day: 5
@@ -89,8 +89,8 @@ challenge_phases:
     leaderboard_public: True
     is_public: True
     is_submission_public: True
-    start_date: 2022-06-06 00:00:00
-    end_date: 2022-07-31 23:59:59
+    start_date: 2022-06-11 00:00:00
+    end_date: 2022-07-30 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
     codename: Physical
     max_submissions_per_day: 5
