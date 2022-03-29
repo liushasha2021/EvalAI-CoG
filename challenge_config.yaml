@@ -6,7 +6,7 @@ description: templates/description.html
 evaluation_details: templates/evaluation_details.html
 terms_and_conditions: templates/terms_and_conditions.html
 image: logo.jpg
-vidio:a.gif
+vidio: a.gif
 submission_guidelines: templates/submission_guidelines.html
 leaderboard_description: Now, wo only use score which can be calculated by the way mationed in the Evaluation to judge which team is better.
 evaluation_script: evaluation_script.zip
