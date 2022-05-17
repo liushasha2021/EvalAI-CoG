@@ -1,18 +1,5 @@
 <h5>Score=60×N + A×0.5×(D+H) - T-10K</h5>
-<p>N is the number of targets successfully activated, T is the time taken (in seconds), K is the number of collisions. If it is a continuous collision, K = 2 × 𝑇𝑘, 𝑇𝑘 is the continuous collision time (in seconds).
-
-  
-  \begin{equation}
-Total score = \textit{60} \times \textit{N} + \textit{0.5} \times \textit{D} + \textit{0.5} \times \textit{H} - \textit{T} - \textit{20} \times \textit{K}
-\end{equation}
-
-% \begin{equation}
-% a+b=\gamma\label{eq}
-% \end{equation}
-
-
-Variable \textit{N} is numbers of goals that are achieved. Variable \textit{D} is damage caused to defensive robot. Variable \textit{H} is remining HP. Variable \textit{T} is time taken to complete the whole progress. Variable \textit{K} is collision time. If it is a continuous collision, \textit{K} = 2 * \textit{Tk}, \textit{Tk} is continuous collision time (unit: second). The numbers of achieved goals, the damage caused to the defensive robot, the remaining HP and the collision times can determine the path smoothing and obstacle avoiding effects, and the total cost time can encourage the time of each game to be as short as possible.
-
+<p>N is numbers of goals that are achieved.  D is damage caused to defensive robot. H is remining HP(Health Point) of EP robot. T  is time taken to complete the whole progress. K is collision time. A is 0 when five goals are still not activated. A is 1 when the fifth goal is activated. 
 
 </p>
 
