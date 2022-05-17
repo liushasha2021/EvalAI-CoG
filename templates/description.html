@@ -8,12 +8,12 @@
 </p>
 <p><a href="https://github.com/liushasha2021/EvalAI-CoG/blob/challenge/templates/a.gif">Demo Vidio</a></p>
 <p><a href="https://github.com/DRL-CASIA/COG-sim2real-challenge">Github Baseline Algrithom</a></p>
-<p><a href="https://github.com/DRL-CASIA/COG-sim2real-challenge/blob/main/CoG%20Challenge%20Rules1.3.pdf">CoG Challenge Rules(English Version)</a></p>
-<p><a href="https://github.com/DRL-CASIA/COG-sim2real-challenge/blob/main/2022%20CoG%20RoboMaster%20Sim2Real%20Challenge%E8%A7%84%E5%88%99%E6%89%8B%E5%86%8C1.3.pdf">CoG Challenge Rules(中文版)</a></p>
+<p><a href="https://github.com/DRL-CASIA/COG-sim2real-challenge/blob/main/2022%20CoG%20RoboMaster%20Sim2Real%20Challenge%20Rules-EN-v1.4.pdf">CoG Challenge Rules(English Version)</a></p>
+<p><a href="https://github.com/DRL-CASIA/COG-sim2real-challenge/blob/main/2022%20CoG%20RoboMaster%20Sim2Real%20Challenge%20Rules-CN-v1.4.pdf">CoG Challenge Rules(中文版)</a></p>
 
 <h5>Track</h5>
 <h6>Track 1: complete information-based track.</h6>
-<p>The state of the robot includes its position in the map, speed, image at the current time, and the target position (but it does not know the corresponding order, which can be determined only after detecting the visual label). The algorithm is required to output the speed command to control the robot.</p>
+<p>The observations provided by the environment include the position and the angle of the EP robot, the position and the angle of the defensive robot, the positions of five goals, image, lidar and some other necessary information.  The algorithm is required to output the speed (x-direction, y-direction, yaw) and fire command  to control the robot.</p>
 
 <h6>Track 2: image-based track</h6>
-<p>The robot can obtain only the image and speed of the current time. The algorithm is required to output the speed command to control the robot.</p>
+<p>The robot can't obtain the position and the angle of the EP robot, but other information can be obtained from the environment.. The algorithm is required to output the speed (x-direction, y-direction, yaw) and fire command  to control the robot.</p>
