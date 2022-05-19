@@ -50,10 +50,10 @@ challenge_phases:
         is_visible: True
       - name: method_description
         is_visible: True
-#       - name: project_url
-#         is_visible: False
-#       - name: publication_url
-#         is_visible: False
+      - name: project_url
+        is_visible: False
+      - name: publication_url
+        is_visible: False
     submission_meta_attributes:
       - name: TextAttribute
         description: Notes on running code
