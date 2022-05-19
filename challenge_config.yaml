@@ -21,7 +21,7 @@ leaderboard:
     schema:
       {
 #         "labels": ["N", "A", "D", "H", "T", "K", "Score"],
-      "labels"：["Score"],
+        "labels":["Score"],
         "default_order_by": "Score",
         "metadata": {
             "Score": {
