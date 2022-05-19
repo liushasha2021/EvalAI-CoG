@@ -72,29 +72,49 @@ challenge_phases:
         is_visible: False
       - name: publication_url
         is_visible: False
-    submission_meta_attributes:
+        submission_meta_attributes:
       - name: TextAttribute
-        description: Notes on running code
+        description: Sample
         type: text
-        required: True
-      - name: Track_Choose
-        description: which track do you prefer?
+        required: False
+      - name: SingleOptionAttribute
+        description: Sample
         type: radio
+        options: ["A", "B", "C"]
+      - name: MultipleChoiceAttribute
+        description: Sample
+        type: checkbox
+        options: ["alpha", "beta", "gamma"]
+      - name: TrueFalseField
+        description: Sample
+        type: boolean
         required: True
-        options: ["Track 1", "Track 2"]
-#       - name: MultipleChoiceAttribute
-#         description: Sample
-#         type: checkbox
-#          required: False
-#         options: ["alpha", "beta", "gamma"]
-#       - name: TrueFalseField
-#         description: Sample
-#         type: boolean
-#         required: True
-
-    is_restricted_to_select_one_submission: True
-    is_partial_submission_evaluation_enabled: True
+    is_restricted_to_select_one_submission: False
+    is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
+#     submission_meta_attributes:
+#       - name: TextAttribute
+#         description: Notes on running code
+#         type: text
+#         required: True
+#       - name: Track_Choose
+#         description: which track do you prefer?
+#         type: radio
+#         required: True
+#         options: ["Track 1", "Track 2"]
+# #       - name: MultipleChoiceAttribute
+# #         description: Sample
+# #         type: checkbox
+# #          required: False
+# #         options: ["alpha", "beta", "gamma"]
+# #       - name: TrueFalseField
+# #         description: Sample
+# #         type: boolean
+# #         required: True
+
+#     is_restricted_to_select_one_submission: True
+#     is_partial_submission_evaluation_enabled: True
+#     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
       
     
     
