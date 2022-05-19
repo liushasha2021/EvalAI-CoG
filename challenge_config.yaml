@@ -16,17 +16,35 @@ start_date: 2022-04-01 00:00:00
 end_date: 2022-08-15 23:59:59
 published: True
 
+# leaderboard:
+#   - id: 1
+#     schema:
+#       {
+# #         "labels": ["N", "A", "D", "H", "T", "K", "Score"],
+#         "labels":["Score"],
+#         "default_order_by": "Score",
+#         "metadata": {
+#             "Score": {
+#             "sort_ascending": True,
+#             "description": "The essential metric to meature the algorithm's level.",
+#           }
+#         }
+#       }
+
 leaderboard:
   - id: 1
     schema:
       {
-#         "labels": ["N", "A", "D", "H", "T", "K", "Score"],
-        "labels":["Score"],
-        "default_order_by": "Score",
+        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
+        "default_order_by": "Total",
         "metadata": {
-            "Score": {
+          "Metric1": {
             "sort_ascending": True,
-            "description": "The essential metric to meature the algorithm's level.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Metric2": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
         }
       }
