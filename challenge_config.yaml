@@ -64,6 +64,10 @@ challenge_phases:
         description: which track do you prefer?
         type: radio
         required: True
+      - name: project_url
+        is_visible: False
+      - name: publication_url
+        is_visible: False
         options: ["Track 1", "Track 2"]
 #       - name: MultipleChoiceAttribute
 #         description: Sample
