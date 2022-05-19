@@ -20,12 +20,12 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Score"],
+        "labels": ["N", "A", "D", "H", "T", "K", "Score"],
         "default_order_by": "Score",
         "metadata": {
-          "Score": {
+            "Score": {
             "sort_ascending": True,
-            "description": "The only metric to meature the algorithm's level.",
+            "description": "The essential metric to meature the algorithm's level.",
           }
         }
       }
@@ -73,7 +73,7 @@ challenge_phases:
 #         type: boolean
 #         required: True
 
-    is_restricted_to_select_one_submission: False
+    is_restricted_to_select_one_submission: True
     is_partial_submission_evaluation_enabled: True
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
       
@@ -120,7 +120,7 @@ challenge_phases:
 #         description: Sample
 #         type: boolean
 #         required: True
-    is_restricted_to_select_one_submission: False
+    is_restricted_to_select_one_submission: True
     is_partial_submission_evaluation_enabled: True
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
     
