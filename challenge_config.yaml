@@ -20,7 +20,8 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["N", "A", "D", "H", "T", "K", "Score"],
+#         "labels": ["N", "A", "D", "H", "T", "K", "Score"],
+      "labels"：["Score"],
         "default_order_by": "Score",
         "metadata": {
             "Score": {
