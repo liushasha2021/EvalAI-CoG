@@ -49,15 +49,15 @@ challenge_phases:
         is_visible: True
       - name: method_description
         is_visible: True
-      - name: project_url
-        is_visible: True
-      - name: publication_url
-        is_visible: True
+#       - name: project_url
+#         is_visible: False
+#       - name: publication_url
+#         is_visible: False
     submission_meta_attributes:
       - name: TextAttribute
         description: Notes on running code
         type: text
-        required: False
+        required: True
       - name: Track_Choose
         description: which track do you prefer?
         type: radio
@@ -74,7 +74,7 @@ challenge_phases:
 #         required: True
 
     is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: False
+    is_partial_submission_evaluation_enabled: True
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
       
     
@@ -121,7 +121,7 @@ challenge_phases:
 #         type: boolean
 #         required: True
     is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: False
+    is_partial_submission_evaluation_enabled: True
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
     
 dataset_splits:
