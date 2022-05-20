@@ -1,39 +1,87 @@
 # If you are not sure what all these fields mean, please refer our documentation here:
 # https://evalai.readthedocs.io/en/latest/configuration.html
-title: 2022 CoG Robomaster Sim2Real Challenge
-short_description: This competition is themed around EP robots, and we will provide simulation environments and real life scenarios. Robots need to continuously search for sequential QR codes in a specified map, while avoiding collisions with static obstacles and other moving robots in the environment. The robot that completes the search for the QR code in the fastest and safest way will win the competition. There are two tracks, the first one is simpler, which is investigates the basic algorithm, the second one is more difficult, which is investigates some reinforcement learning algorithms. We will provide a simulation environment which can be used by reinforcement learning algorithms and other learning algorithms. We will provide motion planning、localization、shutting、rule decision and reinforcement learning baseline algorithms. The competition will be divided into three stages. In the first stage, the competition will be carried out in the simulation environment, in the second stage, the competition will be carried out in the actual robot field, and in the third stage, the scheme defense will be carried out.
-description: templates/description.html
-evaluation_details: templates/evaluation_details.html
-terms_and_conditions: templates/terms_and_conditions.html
-image: logo.jpg
-submission_guidelines: templates/submission_guidelines.html
-leaderboard_description: Now, wo only use score which can be calculated by the way mationed in the Evaluation to judge which team is better.
-evaluation_script: evaluation_script.zip
-remote_evaluation: False
-is_docker_based: False
-start_date: 2022-04-01 00:00:00
-end_date: 2022-08-15 23:59:59
-published: True
+# title: 2022 CoG Robomaster Sim2Real Challenge
+# short_description: This competition is themed around EP robots, and we will provide simulation environments and real life scenarios. Robots need to continuously search for sequential QR codes in a specified map, while avoiding collisions with static obstacles and other moving robots in the environment. The robot that completes the search for the QR code in the fastest and safest way will win the competition. There are two tracks, the first one is simpler, which is investigates the basic algorithm, the second one is more difficult, which is investigates some reinforcement learning algorithms. We will provide a simulation environment which can be used by reinforcement learning algorithms and other learning algorithms. We will provide motion planning、localization、shutting、rule decision and reinforcement learning baseline algorithms. The competition will be divided into three stages. In the first stage, the competition will be carried out in the simulation environment, in the second stage, the competition will be carried out in the actual robot field, and in the third stage, the scheme defense will be carried out.
+# description: templates/description.html
+# evaluation_details: templates/evaluation_details.html
+# terms_and_conditions: templates/terms_and_conditions.html
+# image: logo.jpg
+# submission_guidelines: templates/submission_guidelines.html
+# leaderboard_description: Now, wo only use score which can be calculated by the way mationed in the Evaluation to judge which team is better.
+# evaluation_script: evaluation_script.zip
+# remote_evaluation: False
+# is_docker_based: False
+# start_date: 2022-04-01 00:00:00
+# end_date: 2022-08-15 23:59:59
+# published: True
 
-leaderboard:
-  - id: 1
-    schema:
-      {
-        "labels": ["N", "A", "D", "H", "T", "K", "Score"],
-#         "labels":["Score"],
-        "default_order_by": "Score",
-        "metadata": {
-            "Score": {
-            "sort_ascending": True,
-            "description": "The essential metric to meature the algorithm's level.",
-          }
-        }
-      }
+# leaderboard:
+#   - id: 1
+#     schema:
+#       {
+#         "labels": ["N", "A", "D", "H", "T", "K", "Score"],
+# #         "labels":["Score"],
+#         "default_order_by": "Score",
+#         "metadata": {
+#             "Score": {
+#             "sort_ascending": True,
+#             "description": "The essential metric to meature the algorithm's level.",
+#           }
+#         }
+#       }
 
+      
+# # challenge_phases:
+# #   - id: 1
+# #     name: Simulation Phase
+# #     description: templates/challenge_phase_1_description.html
+# #     leaderboard_public: False
+# #     is_public: True
+# #     is_submission_public: True
+# #     start_date: 2022-05-10 00:00:00
+# #     end_date: 2022-06-10 23:59:59
+# #     test_annotation_file: annotations/test_annotations_devsplit.json
+# #     codename: Simulation
+# #     max_submissions_per_day: 5
+# #     max_submissions_per_month: 50
+# #     max_submissions: 100
+# #     default_submission_meta_attributes:
+# #       - name: method_name
+# #         is_visible: True
+# #       - name: method_description
+# #         is_visible: True
+# #       - name: project_url
+# #         is_visible: True
+# #       - name: publication_url
+# #         is_visible: True
+# #     submission_meta_attributes:
+# #       - name: TextAttribute
+# #         description: Notes on running code
+# #         type: text
+# #         required: True
+# #       - name: Track_Choose
+# #         description: which track do you prefer?
+# #         type: radio
+# #         required: True
+     
+# #         options: ["Track 1", "Track 2"]
+# # #       - name: MultipleChoiceAttribute
+# # #         description: Sample
+# # #         type: checkbox
+# # #          required: False
+# # #         options: ["alpha", "beta", "gamma"]
+# # #       - name: TrueFalseField
+# # #         description: Sample
+# # #         type: boolean
+# # #         required: True
+
+# #     is_restricted_to_select_one_submission: False
+# #     is_partial_submission_evaluation_enabled: False
+# #     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
       
 # challenge_phases:
 #   - id: 1
-#     name: Simulation Phase
+#     name: Dev Phase
 #     description: templates/challenge_phase_1_description.html
 #     leaderboard_public: False
 #     is_public: True
@@ -41,10 +89,10 @@ leaderboard:
 #     start_date: 2022-05-10 00:00:00
 #     end_date: 2022-06-10 23:59:59
 #     test_annotation_file: annotations/test_annotations_devsplit.json
-#     codename: Simulation
+#     codename: dev
 #     max_submissions_per_day: 5
 #     max_submissions_per_month: 50
-#     max_submissions: 100
+#     max_submissions: 50
 #     default_submission_meta_attributes:
 #       - name: method_name
 #         is_visible: True
@@ -56,15 +104,57 @@ leaderboard:
 #         is_visible: True
 #     submission_meta_attributes:
 #       - name: TextAttribute
-#         description: Notes on running code
+#         description: Sample
 #         type: text
-#         required: True
-#       - name: Track_Choose
-#         description: which track do you prefer?
+#         required: False
+#       - name: SingleOptionAttribute
+#         description: Sample
 #         type: radio
+#         options: ["A", "B", "C"]
+#       - name: MultipleChoiceAttribute
+#         description: Sample
+#         type: checkbox
+#         options: ["alpha", "beta", "gamma"]
+#       - name: TrueFalseField
+#         description: Sample
+#         type: boolean
 #         required: True
-     
-#         options: ["Track 1", "Track 2"]
+#     is_restricted_to_select_one_submission: False
+#     is_partial_submission_evaluation_enabled: False
+#     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"    
+    
+#   - id: 2
+#     name: Physical Phase
+#     description: templates/challenge_phase_2_description.html
+#     leaderboard_public: True
+#     is_public: True
+#     is_submission_public: False
+#     start_date: 2022-06-11 00:00:00
+#     end_date: 2022-07-30 23:59:59
+#     test_annotation_file: annotations/test_annotations_testsplit.json
+#     codename: Physical
+#     max_submissions_per_day: 5
+#     max_submissions_per_month: 50
+#     max_submissions: 100
+# #     default_submission_meta_attributes:
+# #       - name: method_name
+# #         is_visible: True
+# #       - name: method_description
+# #         is_visible: True
+# #       - name: project_url
+# #         is_visible: False
+# #       - name: publication_url
+# #         is_visible: False
+# #     submission_meta_attributes:
+# #       - name: TextAttribute
+# #         description: Sample
+# #         type: text
+# #         required: False
+# #       - name: SingleOptionAttribute
+# #         description: Sample
+# #         type: radio
+# #          required: False
+# #         options: ["A", "B", "C"]
 # #       - name: MultipleChoiceAttribute
 # #         description: Sample
 # #         type: checkbox
@@ -74,11 +164,65 @@ leaderboard:
 # #         description: Sample
 # #         type: boolean
 # #         required: True
-
 #     is_restricted_to_select_one_submission: False
-#     is_partial_submission_evaluation_enabled: False
+#     is_partial_submission_evaluation_enabled: True
 #     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
-      
+    
+# dataset_splits:
+#   - id: 1
+#     name: Train Split
+#     codename: train_split
+#   - id: 2
+#     name: Test Split
+#     codename: test_split
+
+# challenge_phase_splits:
+#   - challenge_phase_id: 1
+#     leaderboard_id: 1
+#     dataset_split_id: 1
+#     visibility: 3
+#     leaderboard_decimal_precision: 2
+#     is_leaderboard_order_descending: True
+#   - challenge_phase_id: 2
+#     leaderboard_id: 1
+#     dataset_split_id: 1
+#     visibility: 3
+#     leaderboard_decimal_precision: 2
+#     is_leaderboard_order_descending: True
+
+title: Random Number Generator Challenge
+short_description: Random number generation challenge for each submission
+description: templates/description.html
+evaluation_details: templates/evaluation_details.html
+terms_and_conditions: templates/terms_and_conditions.html
+image: logo.jpg
+submission_guidelines: templates/submission_guidelines.html
+leaderboard_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas a libero nec sagittis.
+evaluation_script: evaluation_script.zip
+remote_evaluation: False
+is_docker_based: False
+start_date: 2019-01-01 00:00:00
+end_date: 2099-05-31 23:59:59
+published: True
+
+leaderboard:
+  - id: 1
+    schema:
+      {
+        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
+        "default_order_by": "Total",
+        "metadata": {
+          "Metric1": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Metric2": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
+        }
+      }
+
 challenge_phases:
   - id: 1
     name: Dev Phase
@@ -86,8 +230,8 @@ challenge_phases:
     leaderboard_public: False
     is_public: True
     is_submission_public: True
-    start_date: 2022-05-10 00:00:00
-    end_date: 2022-06-10 23:59:59
+    start_date: 2019-01-19 00:00:00
+    end_date: 2099-04-25 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
     codename: dev
     max_submissions_per_day: 5
@@ -121,53 +265,47 @@ challenge_phases:
         required: True
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
-    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"    
-    
+    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
   - id: 2
-    name: Physical Phase
+    name: Test Phase
     description: templates/challenge_phase_2_description.html
     leaderboard_public: True
     is_public: True
-    is_submission_public: False
-    start_date: 2022-06-11 00:00:00
-    end_date: 2022-07-30 23:59:59
+    is_submission_public: True
+    start_date: 2019-01-01 00:00:00
+    end_date: 2099-05-24 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
-    codename: Physical
+    codename: test
     max_submissions_per_day: 5
     max_submissions_per_month: 50
-    max_submissions: 100
-#     default_submission_meta_attributes:
-#       - name: method_name
-#         is_visible: True
-#       - name: method_description
-#         is_visible: True
-#       - name: project_url
-#         is_visible: False
-#       - name: publication_url
-#         is_visible: False
-#     submission_meta_attributes:
-#       - name: TextAttribute
-#         description: Sample
-#         type: text
-#         required: False
-#       - name: SingleOptionAttribute
-#         description: Sample
-#         type: radio
-#          required: False
-#         options: ["A", "B", "C"]
-#       - name: MultipleChoiceAttribute
-#         description: Sample
-#         type: checkbox
-#          required: False
-#         options: ["alpha", "beta", "gamma"]
-#       - name: TrueFalseField
-#         description: Sample
-#         type: boolean
-#         required: True
+    max_submissions: 50
+    default_submission_meta_attributes:
+      - name: method_name
+        is_visible: True
+      - name: method_description
+        is_visible: True
+      - name: project_url
+        is_visible: True
+      - name: publication_url
+        is_visible: True
+    submission_meta_attributes:
+      - name: TextAttribute
+        description: Sample
+        type: text
+      - name: SingleOptionAttribute
+        description: Sample
+        type: radio
+        options: ["A", "B", "C"]
+      - name: MultipleChoiceAttribute
+        description: Sample
+        type: checkbox
+        options: ["alpha", "beta", "gamma"]
+      - name: TrueFalseField
+        description: Sample
+        type: boolean
     is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: True
-    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
-    
+    is_partial_submission_evaluation_enabled: False
+
 dataset_splits:
   - id: 1
     name: Train Split
@@ -180,12 +318,18 @@ challenge_phase_splits:
   - challenge_phase_id: 1
     leaderboard_id: 1
     dataset_split_id: 1
-    visibility: 3
+    visibility: 1
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
   - challenge_phase_id: 2
     leaderboard_id: 1
     dataset_split_id: 1
     visibility: 3
+    leaderboard_decimal_precision: 2
+    is_leaderboard_order_descending: True
+  - challenge_phase_id: 2
+    leaderboard_id: 1
+    dataset_split_id: 2
+    visibility: 1
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
