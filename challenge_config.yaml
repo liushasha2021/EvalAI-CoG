@@ -122,7 +122,7 @@ challenge_phases:
 #         type: boolean
 #         required: True
     is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: True
+    is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
     
 dataset_splits:
