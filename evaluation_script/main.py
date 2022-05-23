@@ -39,6 +39,27 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
             'submitted_at': u'2017-03-20T19:22:03.880652Z'
         }
     """
+    
+    submission_metadata = kwargs.get("submission_metadata")
+    print submission_metadata
+
+    # Do stuff here
+    # Set `score` to 91 as an example
+
+    score = 91
+    if score > 90:
+        slack_data = kwargs.get("submission_metadata")
+        webhook_url = "https://hooks.slack.com/services/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"
+        # To know more about slack webhook, checkout this link: https://api.slack.com/incoming-webhooks
+
+        response = requests.post(
+            webhook_url,
+            data=json.dumps({'text': "*Flag raised for submission:* \n \n" + str(slack_data)}),
+            headers={'Content-Type': 'application/json'})
+    
+    
+    
+    
     output = {}
     if phase_codename == "Simulation Phase":
         print("Evaluating for Simulation Phase")
