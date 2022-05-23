@@ -14,7 +14,7 @@ def run():
     sys.path.append("{}/challenge_data/challenge_1".format(current_working_directory))
 
     challenge_id = 1
-    challenge_phase = "test"  # Add the challenge phase codename to be tested
+    challenge_phase = "Simulation Phase"  # Add the challenge phase codename to be tested
     annotation_file_path = "{}/annotations/test_annotations_testsplit.json".format(
         current_working_directory
     )  # Add the test annotation file path
