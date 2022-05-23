@@ -39,7 +39,7 @@ leaderboard:
       
 challenge_phases:
   - id: 1
-    name: Simulation Phase
+    name: SimulationPhase
     description: templates/challenge_phase_1_description.html
     leaderboard_public: True
     is_public: True
@@ -88,7 +88,7 @@ challenge_phases:
       
     
   - id: 2
-    name: Physical Phase
+    name: PhysicalPhase
     description: templates/challenge_phase_2_description.html
     leaderboard_public: True
     is_public: True
