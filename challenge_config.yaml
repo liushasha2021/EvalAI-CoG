@@ -16,7 +16,7 @@ submission_guidelines: templates/submission_guidelines.html
 leaderboard_description: Now, wo only use score which can be calculated by the way mationed in the Evaluation to judge which team is better.
 evaluation_script: evaluation_script.zip
 remote_evaluation: True
-is_docker_based: False
+is_docker_based: True
 start_date: 2022-04-01 00:00:00
 end_date: 2022-08-15 23:59:59
 published: True
