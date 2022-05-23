@@ -83,8 +83,8 @@ challenge_phases:
 
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
-#     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
-     allowed_submission_file_types: ".txt"
+    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
+#      allowed_submission_file_types: ".txt"
       
     
   - id: 2
