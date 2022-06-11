@@ -61,7 +61,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     
     
     output = {}
-    phase_codename = "SimulationPhase"
+#     phase_codename = "SimulationPhase"
     if phase_codename == "SimulationPhase":
         output["result"] = [
             {
