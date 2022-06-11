@@ -39,16 +39,99 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
-        "default_order_by": "Total",
+        "labels": ["Easy_Nav_T", "Easy_activated_goal", "Easy_remain_HP", "Easy_demage", "Easy_collision_punishment", "Easy_time", "Easy_score", "Middle_Nav_T", "Middle_activated_goal", "Middle_remain_HP", "Middle_demage", "Middle_collision_punishment", "Middle_time", "Middle_score","Hard_Nav_T", "Hard_activated_goal", "Hard_remain_HP", "Hard_demage", "Hard_collision_punishment", "Hard_time", "Hard_score","Mean_activated_goal", "Score"],
+        "default_order_by": "Score",
         "metadata": {
-          "Metric1": {
+          "Easy_Nav_T": {
             "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description": "",
           },
-          "Metric2": {
+          "Easy_activated_goal": {
             "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description": "",
+          },
+          "Easy_remain_HP": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Easy_demage": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Easy_collision_punishment": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Easy_time": {
+            "sort_ascending": True,
+            "description": "",
+          },"Easy_score": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Middle_Nav_T": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Middle_activated_goal": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Middle_remain_HP": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Middle_demage": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Middle_collision_punishment": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Middle_time": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Middle_score": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Hard_Nav_T": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Hard_activated_goal": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Hard_remain_HP": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Hard_demage": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Hard_collision_punishment": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Hard_time": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Hard_score": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Mean_activated_goal": {
+            "sort_ascending": True,
+            "description": "",
+          },
+          "Score": {
+            "sort_ascending": True,
+            "description": "",
           }
         }
       }
