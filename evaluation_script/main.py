@@ -66,7 +66,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["result"] = [
             {
                 "train_split": {
-                    "Metric1": 0,
+                    "Metric1": 1,
                     "Metric2": 0,
                     "Metric3": 0,
                     "Total": 0,
