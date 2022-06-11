@@ -160,18 +160,51 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         }
     """
     output = {}
-    if phase_codename == "dev":
+    
+    
         print("Evaluating for Dev Phase")
+#         output["result"] = [
+#             {
+#                 "train_split": {
+#                     "Metric1": random.randint(0, 99),
+#                     "Metric2": random.randint(0, 99),
+#                     "Metric3": random.randint(0, 99),
+#                     "Total": random.randint(0, 99),
+#                 }
+#             }
+#         ]
+    phase_codename = "SimulationPhase"
+    if phase_codename == "SimulationPhase":
         output["result"] = [
-            {
-                "train_split": {
-                    "Metric1": random.randint(0, 99),
-                    "Metric2": random.randint(0, 99),
-                    "Metric3": random.randint(0, 99),
-                    "Total": random.randint(0, 99),
+                {
+                    "train_split": 
+                    {
+                        "Easy_Nav_T": 1,
+                        "Easy_activated_goal": 0,
+                        "Easy_remain_HP": 0,
+                        "Easy_demage": 0,
+                        "Easy_collision_punishment": 1,
+                        "Easy_time": 0,
+                        "Easy_score": 0,
+                        "Middle_Nav_T": 0,
+                        "Middle_activated_goal": 1,
+                        "Middle_remain_HP": 0,
+                        "Middle_demage": 0,
+                        "Middle_collision_punishment": 0,
+                        "Middle_time": 1,
+                        "Middle_score": 0,
+                        "Hard_Nav_T": 0,
+                        "Hard_activated_goal": 0,
+                        "Hard_remain_HP": 1,
+                        "Hard_demage": 0,
+                        "Hard_collision_punishment": 0,
+                        "Hard_time": 0,
+                        "Hard_score": 0,
+                        "Mean_activated_goal": 0,
+                        "Score": 0,
+                    }
                 }
-            }
-        ]
+            ]
         # To display the results in the result file
         output["submission_result"] = output["result"][0]["train_split"]
         print("Completed evaluation for Dev Phase")
