@@ -61,7 +61,8 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     
     
     output = {}
-    if phase_codename == "Simulation":
+    phase_codename = "SimulationPhase"
+    if phase_codename == "SimulationPhase":
         print("Evaluating for Simulation Phase")
         output["result"] = [
             {
@@ -76,7 +77,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         # To display the results in the result file
         output["submission_result"] = output["result"][0]["train_split"]
         print("Completed evaluation for Dev Phase")
-    elif phase_codename == "Physical":
+    elif phase_codename == "PhysicalPhase":
         print("Evaluating for Physical Phase")
         output["result"] = [
             {
