@@ -45,7 +45,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     output = {}
    phase_codename = "SimulationPhase"
     if phase_codename == "SimulationPhase":
-        if submission_metadata["participant_team_name"] == "LuoXiangSaysAI":
+        if submission_metadata["participant_team_name"] == u'LuoXiangSaysAI':
             output["result"] = [
                 {
                     "train_split": 
