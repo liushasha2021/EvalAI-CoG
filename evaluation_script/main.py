@@ -40,7 +40,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
 #         }
 #     """
     
-#     submission_metadata = kwargs.get("submission_metadata")
+    submission_metadata = kwargs.get("submission_metadata")
 #     print submission_metadata
 
 #     # Do stuff here
@@ -56,23 +56,26 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
 #             webhook_url,
 #             data=json.dumps({'text': "*Flag raised for submission:* \n \n" + str(slack_data)}),
 #             headers={'Content-Type': 'application/json'})
-    
-    
+
+    submission_metadata = kwargs.get("submission_metadata")
     
     
     output = {}
 #     phase_codename = "SimulationPhase"
     if phase_codename == "SimulationPhase":
-        output["result"] = [
-            {
-                "train_split": {
-                    "Metric1": 1,
-                    "Metric2": 0,
-                    "Metric3": 0,
-                    "Total": 0,
+        if submission_metadata["participant_team_name"] == "LuoXiangSaysAI":
+            output["result"] = [
+                {
+                    "train_split": 
+                    {
+                        "Metric1": 1,
+                        "Metric2": 0,
+                        "Metric3": 0,
+                        "Total": 0,
+                    }
                 }
-            }
-        ]
+            ]
+            
         # To display the results in the result file
         output["submission_result"] = output["result"][0]["train_split"]
         print("Completed evaluation for Dev Phase")
