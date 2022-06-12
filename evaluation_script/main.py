@@ -3,25 +3,24 @@ import random
 
 def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwargs):
     
-    output = {}        
-    output["result"] = [
-        {
-            "train_split": {
-            "Metric1": random.randint(0, 99),
-            "Metric2": random.randint(0, 99),
-            "Metric3": random.randint(0, 99),
-            "Total": random.randint(0, 99),
-            }
-        },
-        {
-            "test_split": {
-                "Metric1": random.randint(0, 99),
-                "Metric2": random.randint(0, 99),
-                "Metric3": random.randint(0, 99),
-                "Total": random.randint(0, 99),
+    output = {}
+    output['result'] = [
+                {
+                    'train_split': {
+                        'Metric1': 123,
+                        'Metric2': 123,
+                        'Metric3': 123,
+                        'Total': 123,
+                    }
+                },
+                {
+                    'test_split': {
+                        'Metric1': 123,
+                        'Metric2': 123,
+                        'Metric3': 123,
+                        'Total': 123,
+                    }
                 }
-            },
-        ]
-    output["submission_result"] = output["result"][0]["train_split"]
-#         print("Completed evaluation for Test Phase")
+            ]
+
     return output
