@@ -91,7 +91,8 @@ def update_submission_result(env, challenge_pk, phase_pk, submission_pk):
         "submission": submission_pk,
     }
     submission_data = {
-        "challenge_phase": phase_pk,
+#         "challenge_phase": phase_pk,
+        "challenge_phase": "asdfgh",
         "submission": submission_pk,
         "stdout": "standard_ouput",
         "stderr": "standard_error",
