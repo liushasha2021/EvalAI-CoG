@@ -150,7 +150,7 @@ challenge_phases:
     start_date: 2022-05-10 00:00:00
     end_date: 2022-06-17 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
-    codename: Simulation
+    codename: SimulationPhase
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
@@ -185,7 +185,7 @@ challenge_phases:
 #         required: False
 
     is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: True
+    is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
 #      allowed_submission_file_types: ".txt"
       
@@ -199,7 +199,7 @@ challenge_phases:
     start_date: 2022-06-11 00:00:00
     end_date: 2022-07-30 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
-    codename: Physical
+    codename: PhysicalPhase
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
@@ -232,7 +232,7 @@ challenge_phases:
 #         type: boolean
 #         required: True
     is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: True
+    is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
     
 dataset_splits:
@@ -251,8 +251,8 @@ challenge_phase_splits:
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
   - challenge_phase_id: 2
-    leaderboard_id: 1
-    dataset_split_id: 1
+    leaderboard_id: 2
+    dataset_split_id: 2
     visibility: 1
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
