@@ -37,15 +37,16 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         }
     """
     output = {}
+    phase_codename = "dev"
     if phase_codename == "dev":
         print("Evaluating for Dev Phase")
         output["result"] = [
             {
                 "train_split": {
-                    "Metric1": random.randint(0, 99),
-                    "Metric2": random.randint(0, 99),
-                    "Metric3": random.randint(0, 99),
-                    "Total": random.randint(0, 99),
+                    "Easy_Nav_T": random.randint(0, 99),
+#                     "Metric2": random.randint(0, 99),
+#                     "Metric3": random.randint(0, 99),
+#                     "Total": random.randint(0, 99),
                 }
             }
         ]
