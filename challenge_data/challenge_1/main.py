@@ -42,6 +42,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     """
     print(kwargs["submission_metadata"])
     output = {}
+    phase_codename = "dev"
     if phase_codename == "dev":
         print("Evaluating for Dev Phase")
         output["result"] = [
