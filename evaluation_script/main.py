@@ -160,9 +160,16 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         }
     """
     output = {}
-    
-    
-        print("Evaluating for Dev Phase")
+    output["result"] = [
+                {
+                    "train_split": 
+                    {
+                        "Easy_Nav_T": 1,
+                    }
+                }
+    ]
+    output["submission_result"] = output["result"][0]["train_split"]
+#         print("Evaluating for Dev Phase")
 #         output["result"] = [
 #             {
 #                 "train_split": {
@@ -173,13 +180,13 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
 #                 }
 #             }
 #         ]
-    phase_codename = "SimulationPhase"
-    if phase_codename == "SimulationPhase":
-        output["result"] = [
-                {
-                    "train_split": 
-                    {
-                        "Easy_Nav_T": 1,
+#     hase_codename = "SimulationPhase"
+#     if hase_codename == "SimulationPhase":
+#         output["result"] = [
+#                 {
+#                     "train_split": 
+#                     {
+#                         "Easy_Nav_T": 1,
 #                         "Easy_activated_goal": 0,
 #                         "Easy_remain_HP": 0,
 #                         "Easy_demage": 0,
@@ -202,35 +209,35 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
 #                         "Hard_score": 0,
 #                         "Mean_activated_goal": 0,
 #                         "Score": 0,
-                    }
-                }
-            ]
+#                     }
+#                 }
+#             ]
         # To display the results in the result file
-        output["submission_result"] = output["result"][0]["train_split"]
-        print("Completed evaluation for Dev Phase")
-    elif phase_codename == "test":
-        print("Evaluating for Test Phase")
-        output["result"] = [
-            {
-                "train_split": {
-                    "Metric1": random.randint(0, 99),
-                    "Metric2": random.randint(0, 99),
-                    "Metric3": random.randint(0, 99),
-                    "Total": random.randint(0, 99),
-                }
-            },
-            {
-                "test_split": {
-                    "Metric1": random.randint(0, 99),
-                    "Metric2": random.randint(0, 99),
-                    "Metric3": random.randint(0, 99),
-                    "Total": random.randint(0, 99),
-                }
-            },
-        ]
-        # To display the results in the result file
-        output["submission_result"] = output["result"][0]
-        print("Completed evaluation for Test Phase")
+#         output["submission_result"] = output["result"][0]["train_split"]
+#         print("Completed evaluation for Dev Phase")
+#     elif phase_codename == "test":
+#         print("Evaluating for Test Phase")
+#         output["result"] = [
+#             {
+#                 "train_split": {
+#                     "Metric1": random.randint(0, 99),
+#                     "Metric2": random.randint(0, 99),
+#                     "Metric3": random.randint(0, 99),
+#                     "Total": random.randint(0, 99),
+#                 }
+#             },
+#             {
+#                 "test_split": {
+#                     "Metric1": random.randint(0, 99),
+#                     "Metric2": random.randint(0, 99),
+#                     "Metric3": random.randint(0, 99),
+#                     "Total": random.randint(0, 99),
+#                 }
+#             },
+#         ]
+#         # To display the results in the result file
+#         output["submission_result"] = output["result"][0]
+#         print("Completed evaluation for Test Phase")
     return output
 
 
