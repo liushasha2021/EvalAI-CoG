@@ -154,7 +154,7 @@ challenge_phases:
     start_date: 2022-05-10 00:00:00
     end_date: 2022-06-17 23:59:59
     test_annotation_file: annotations/test_annotations_devsplit.json
-    codename: SimulationPhase
+    codename: dev
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
