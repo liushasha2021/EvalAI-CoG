@@ -14,8 +14,8 @@ import time
 import evaluation_pb2
 import evaluation_pb2_grpc
 
-# LOCAL_EVALUATION = os.environ.get("LOCAL_EVALUATION")
-LOCAL_EVALUATION = True
+LOCAL_EVALUATION = os.environ.get("LOCAL_EVALUATION")
+# LOCAL_EVALUATION = True
 EVALUATION_COMPLETED = False
 
 
