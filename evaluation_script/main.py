@@ -159,21 +159,23 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
             'submitted_at': u'2017-03-20T19:22:03.880652Z'
         }
     """
+    
     output = {}
-    output['result'] = [
-                {
-                    'train_split': 
+    if phase_codename == "SimulationPhase":
+        output['result'] = [
                     {
-                        'Easy_Nav_T': 1,
+                        'train_split': 
+                        {
+                            'Easy_Nav_T': 1,
+                        }
+                    },
+                    {
+                        'test_split': {
+                            'Easy_Nav_T': 1,
+                        }
                     }
-                },
-                {
-                    'test_split': {
-                        'Easy_Nav_T': 1,
-                    }
-                }
-                
-    ]
+
+        ]
 #     output["submission_result"] = output["result"][0]["train_split"]
 #         print("Evaluating for Dev Phase")
 #         output["result"] = [
