@@ -160,15 +160,21 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         }
     """
     output = {}
-    output["result"] = [
+    output['result'] = [
                 {
-                    "train_split": 
+                    'train_split': 
                     {
-                        "Easy_Nav_T": 1,
+                        'Easy_Nav_T': 1,
+                    }
+                },
+                {
+                    'test_split': {
+                        'Easy_Nav_T': 1,
                     }
                 }
+                
     ]
-    output["submission_result"] = output["result"][0]["train_split"]
+#     output["submission_result"] = output["result"][0]["train_split"]
 #         print("Evaluating for Dev Phase")
 #         output["result"] = [
 #             {
