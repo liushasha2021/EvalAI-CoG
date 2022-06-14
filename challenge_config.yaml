@@ -13,7 +13,7 @@ evaluation_details: templates/evaluation_details.html
 terms_and_conditions: templates/terms_and_conditions.html
 image: logo.jpg
 submission_guidelines: templates/submission_guidelines.html
-leaderboard_description: Now, we only use score which can be calculated by the way mentioned in the Evaluation to judge which team is better.
+leaderboard_description: templates/terms_and_conditions.html
 evaluation_script: evaluation_script.zip
 remote_evaluation: False
 is_docker_based: False
