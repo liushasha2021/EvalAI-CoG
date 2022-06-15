@@ -15,7 +15,6 @@ import evaluation_pb2
 import evaluation_pb2_grpc
 
 LOCAL_EVALUATION = os.environ.get("LOCAL_EVALUATION")
-# LOCAL_EVALUATION = True
 EVALUATION_COMPLETED = False
 
 
@@ -92,7 +91,6 @@ def update_submission_result(env, challenge_pk, phase_pk, submission_pk):
     }
     submission_data = {
         "challenge_phase": phase_pk,
-#         "challenge_phase": "asdfgh",
         "submission": submission_pk,
         "stdout": "standard_ouput",
         "stderr": "standard_error",
@@ -101,8 +99,7 @@ def update_submission_result(env, challenge_pk, phase_pk, submission_pk):
             [
                 {
                     "split": "train_split",
-                    "show_to_participant": False,
-#                     "show_to_participant": True,
+                    "show_to_participant": True,
                     "accuracies": {"score": env.score},
                 }
             ]
