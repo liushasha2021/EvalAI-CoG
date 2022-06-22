@@ -231,10 +231,11 @@ challenge_phases:
         type: checkbox
          required: False
         options: ["alpha", "beta", "gamma"]
-      - name: TrueFalseField
-        description: Sample
-        type: boolean
-        required: False
+      - name: Track_Choose
+        description: which track do you prefer?
+        type: radio
+        required: True
+        options: ["Track 1", "Track 2"]
     is_restricted_to_select_one_submission: False
     is_partial_submission_evaluation_enabled: False
     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
