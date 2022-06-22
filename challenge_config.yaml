@@ -39,109 +39,6 @@ leaderboard:
         }
       }
 
-# leaderboard:
-#   - id: 1
-#     schema:
-#       {
-# #         "labels": ["Easy_Nav_T", "Easy_activated_goal", "Easy_remain_HP", "Easy_demage", "Easy_collision_punishment", "Easy_time", "Easy_score", "Middle_Nav_T", "Middle_activated_goal", "Middle_remain_HP", "Middle_demage", "Middle_collision_punishment", "Middle_time", "Middle_score","Hard_Nav_T", "Hard_activated_goal", "Hard_remain_HP", "Hard_demage", "Hard_collision_punishment", "Hard_time", "Hard_score","Mean_activated_goal", "Score"],
-#         "labels": ["Easy_Nav_T"],
-# #         "default_order_by": "Score",
-#         "default_order_by": "Easy_Nav_T",
-#         "metadata": {
-#           "Easy_Nav_T": {
-#             "sort_ascending": True,
-#             "description": "",
-#           },
-# #           "Easy_activated_goal": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Easy_remain_HP": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Easy_demage": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Easy_collision_punishment": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Easy_time": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },"Easy_score": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Middle_Nav_T": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Middle_activated_goal": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Middle_remain_HP": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Middle_demage": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Middle_collision_punishment": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Middle_time": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Middle_score": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Hard_Nav_T": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Hard_activated_goal": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Hard_remain_HP": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Hard_demage": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Hard_collision_punishment": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Hard_time": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Hard_score": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Mean_activated_goal": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           },
-# #           "Score": {
-# #             "sort_ascending": True,
-# #             "description": "",
-# #           }
-#         }
-#       }
-
 
       
 challenge_phases:
@@ -195,16 +92,16 @@ challenge_phases:
       
     
     
-#      - id: 2
-#     name: PhysicalPhase
-#     description: templates/challenge_phase_2_description.html
-#     leaderboard_public: True
-#     is_public: True
-#     is_submission_public: True
-#     start_date: 2022-06-20 00:00:00
-#     end_date: 2022-07-30 23:59:59
+    - id: 2
+    name: PhysicalPhase
+    description: templates/challenge_phase_2_description.html
+    leaderboard_public: True
+    is_public: True
+    is_submission_public: True
+    start_date: 2022-06-20 00:00:00
+    end_date: 2022-07-30 23:59:59
 #     test_annotation_file: annotations/test_annotations_testsplit.json
-#     codename: dev
+    codename: dev
 #     max_submissions_per_day: 5
 #     max_submissions_per_month: 50
 #     max_submissions: 100
