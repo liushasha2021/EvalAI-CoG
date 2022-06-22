@@ -101,7 +101,7 @@ challenge_phases:
     start_date: 2022-06-20 00:00:00
     end_date: 2022-07-30 23:59:59
     test_annotation_file: annotations/test_annotations_testsplit.json
-    codename: dev
+    codename: test
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
@@ -138,7 +138,7 @@ challenge_phases:
 #     is_restricted_to_select_one_submission: False
 #     is_partial_submission_evaluation_enabled: False
 #     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
-# #      allowed_submission_file_types: ".txt"
+#      allowed_submission_file_types: ".txt"
     
     
     
