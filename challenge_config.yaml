@@ -114,16 +114,16 @@ challenge_phases:
         is_visible: True
       - name: publication_url
         is_visible: True
-#     submission_meta_attributes:
-#       - name: TextAttribute
-#         description: Notes on running code
-#         type: text
-#         required: True
-#       - name: Track_Choose
-#         description: which track do you prefer?
-#         type: radio
-#         required: True
-#         options: ["Track 1", "Track 2"]
+    submission_meta_attributes:
+      - name: TextAttribute
+        description: Notes on running code
+        type: text
+        required: True
+      - name: Track_Choose
+        description: which track do you prefer?
+        type: radio
+        required: True
+        options: ["Track 1", "Track 2"]
         
 #       - name: MultipleChoiceAttribute
 #         description: Sample
