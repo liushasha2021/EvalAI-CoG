@@ -105,15 +105,15 @@ challenge_phases:
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 100
-#     default_submission_meta_attributes:
-#       - name: method_name
-#         is_visible: True
-#       - name: method_description
-#         is_visible: True
-#       - name: project_url
-#         is_visible: True
-#       - name: publication_url
-#         is_visible: True
+    default_submission_meta_attributes:
+      - name: method_name
+        is_visible: True
+      - name: method_description
+        is_visible: True
+      - name: project_url
+        is_visible: True
+      - name: publication_url
+        is_visible: True
 #     submission_meta_attributes:
 #       - name: TextAttribute
 #         description: Notes on running code
@@ -125,15 +125,15 @@ challenge_phases:
 #         required: True
 #         options: ["Track 1", "Track 2"]
         
-# #       - name: MultipleChoiceAttribute
-# #         description: Sample
-# #         type: checkbox
-# #          required: False
-# #         options: ["alpha", "beta", "gamma"]
-# #       - name: TrueFalseField
-# #         description: Sample
-# #         type: boolean
-# #         required: False
+#       - name: MultipleChoiceAttribute
+#         description: Sample
+#         type: checkbox
+#          required: False
+#         options: ["alpha", "beta", "gamma"]
+#       - name: TrueFalseField
+#         description: Sample
+#         type: boolean
+#         required: False
 
 #     is_restricted_to_select_one_submission: False
 #     is_partial_submission_evaluation_enabled: False
