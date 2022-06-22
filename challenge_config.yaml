@@ -195,53 +195,53 @@ challenge_phases:
       
     
     
-     - id: 2
-    name: PhysicalPhase
-    description: templates/challenge_phase_2_description.html
-    leaderboard_public: True
-    is_public: True
-    is_submission_public: True
-    start_date: 2022-06-20 00:00:00
-    end_date: 2022-07-30 23:59:59
-    test_annotation_file: annotations/test_annotations_devsplit.json
-    codename: dev
-    max_submissions_per_day: 5
-    max_submissions_per_month: 50
-    max_submissions: 100
-    default_submission_meta_attributes:
-      - name: method_name
-        is_visible: True
-      - name: method_description
-        is_visible: True
-      - name: project_url
-        is_visible: True
-      - name: publication_url
-        is_visible: True
-    submission_meta_attributes:
-      - name: TextAttribute
-        description: Notes on running code
-        type: text
-        required: True
-      - name: Track_Choose
-        description: which track do you prefer?
-        type: radio
-        required: True
-        options: ["Track 1", "Track 2"]
+#      - id: 2
+#     name: PhysicalPhase
+#     description: templates/challenge_phase_2_description.html
+#     leaderboard_public: True
+#     is_public: True
+#     is_submission_public: True
+#     start_date: 2022-06-20 00:00:00
+#     end_date: 2022-07-30 23:59:59
+#     test_annotation_file: annotations/test_annotations_testsplit.json
+#     codename: dev
+#     max_submissions_per_day: 5
+#     max_submissions_per_month: 50
+#     max_submissions: 100
+#     default_submission_meta_attributes:
+#       - name: method_name
+#         is_visible: True
+#       - name: method_description
+#         is_visible: True
+#       - name: project_url
+#         is_visible: True
+#       - name: publication_url
+#         is_visible: True
+#     submission_meta_attributes:
+#       - name: TextAttribute
+#         description: Notes on running code
+#         type: text
+#         required: True
+#       - name: Track_Choose
+#         description: which track do you prefer?
+#         type: radio
+#         required: True
+#         options: ["Track 1", "Track 2"]
         
-#       - name: MultipleChoiceAttribute
-#         description: Sample
-#         type: checkbox
-#          required: False
-#         options: ["alpha", "beta", "gamma"]
-#       - name: TrueFalseField
-#         description: Sample
-#         type: boolean
-#         required: False
+# #       - name: MultipleChoiceAttribute
+# #         description: Sample
+# #         type: checkbox
+# #          required: False
+# #         options: ["alpha", "beta", "gamma"]
+# #       - name: TrueFalseField
+# #         description: Sample
+# #         type: boolean
+# #         required: False
 
-    is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: False
-    allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
-#      allowed_submission_file_types: ".txt"
+#     is_restricted_to_select_one_submission: False
+#     is_partial_submission_evaluation_enabled: False
+#     allowed_submission_file_types: ".json, .zip, .txt, .tsv, .gz, .csv, .h5, .npy, .npz"
+# #      allowed_submission_file_types: ".txt"
     
     
     
