@@ -92,7 +92,7 @@ challenge_phases:
       
     
     
-    - id: 2
+  - id: 2
     name: PhysicalPhase
     description: templates/challenge_phase_2_description.html
     leaderboard_public: True
@@ -100,11 +100,11 @@ challenge_phases:
     is_submission_public: True
     start_date: 2022-06-20 00:00:00
     end_date: 2022-07-30 23:59:59
-#     test_annotation_file: annotations/test_annotations_testsplit.json
+    test_annotation_file: annotations/test_annotations_testsplit.json
     codename: dev
-#     max_submissions_per_day: 5
-#     max_submissions_per_month: 50
-#     max_submissions: 100
+    max_submissions_per_day: 5
+    max_submissions_per_month: 50
+    max_submissions: 100
 #     default_submission_meta_attributes:
 #       - name: method_name
 #         is_visible: True
